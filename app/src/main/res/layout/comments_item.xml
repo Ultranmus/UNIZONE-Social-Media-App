@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/shimmer_placeholder"
+    >
+    <View
+        android:backgroundTint="#E91E63"
+        android:layout_width="@dimen/_42mdp"
+        android:layout_height="@dimen/_42mdp"
+        android:background="@drawable/circle_bg"
+        app:layout_constraintStart_toStartOf="@+id/prf_img"
+        app:layout_constraintTop_toTopOf="@+id/prf_img"
+        app:layout_constraintEnd_toEndOf="@+id/prf_img"
+        app:layout_constraintBottom_toBottomOf="@+id/prf_img"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/prf_img"
+        android:layout_width="@dimen/_40mdp"
+        android:layout_height="@dimen/_40mdp"
+        android:layout_marginStart="@dimen/_10mdp"
+        android:layout_marginTop="@dimen/_6mdp"
+        android:src="@drawable/profile"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:civ_border_width="@dimen/_1mdp"
+        app:civ_border_color="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12mdp"
+        android:layout_marginEnd="@dimen/_32mdp"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:text="My moments"
+        android:textColor="#000000"
+        android:textSize="@dimen/_15font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/prf_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/prf_img"
+        app:layout_constraintTop_toTopOf="@+id/prf_img"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6mdp"
+        android:layout_marginEnd="@dimen/_32mdp"
+        android:inputType="textMultiLine"
+        android:text="Tap to make momentsssssssssssssssss sssssssssssssssssssssssssssssssssssssssss"
+        android:textColor="#000000"
+        android:textSize="@dimen/_11font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+    <TextView
+        android:id="@+id/replyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2mdp"
+        android:layout_marginEnd="@dimen/_32mdp"
+        android:text="reply"
+        android:textColor="#000000"
+        android:textSize="@dimen/_11font_mdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/comment"
+        app:layout_constraintTop_toBottomOf="@+id/comment" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2mdp"
+        android:layout_marginEnd="16dp"
+        android:text="12-10-2020"
+        android:textColor="#000000"
+        android:textSize="@dimen/_9font_mdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/replyButton"
+        app:layout_constraintTop_toBottomOf="@+id/comment" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reply_rv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_2mdp"
+        app:layout_constraintStart_toStartOf="@id/replyButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/replyButton"
+        android:layout_marginBottom="@dimen/_2mdp"
+        android:visibility="gone"
+        />
+<View
+    android:layout_marginTop="@dimen/_6mdp"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#A5A4A4"
+    app:layout_constraintTop_toBottomOf="@+id/reply_rv"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

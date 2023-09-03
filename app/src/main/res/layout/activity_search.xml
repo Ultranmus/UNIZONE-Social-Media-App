@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search">
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg"
+        android:backgroundTint="#A5A4A4"
+        app:layout_constraintEnd_toEndOf="@id/search_txt"
+        app:layout_constraintStart_toStartOf="@id/search_txt"
+        app:layout_constraintTop_toTopOf="@id/search_txt"
+        app:layout_constraintBottom_toBottomOf="@id/search_txt"/>
+
+    <AutoCompleteTextView
+        android:backgroundTint="@android:color/transparent"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:id="@+id/search_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Search users here !!!"
+        android:windowSoftInputMode="adjustPan|adjustResize"
+        android:dropDownHeight="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+<!--    android:textCursorDrawable="@null"-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

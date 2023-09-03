@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".create_post">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A5A4A4"
+                app:layout_constraintBottom_toTopOf="@id/prf_img"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/create_pst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12mdp"
+                        android:text="Create Post"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_20font_mdp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/make_post"
+                        android:layout_width="@dimen/_25mdp"
+                        android:layout_height="@dimen/_25mdp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/_10mdp"
+                        android:contentDescription="create post"
+                        android:src="@drawable/ic_baseline_save_24"
+                        android:visibility="invisible"/>
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="@dimen/_55mdp"
+                android:layout_height="@dimen/_55mdp"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="#E91E63"
+                app:layout_constraintBottom_toBottomOf="@+id/prf_img"
+                app:layout_constraintEnd_toEndOf="@+id/prf_img"
+                app:layout_constraintStart_toStartOf="@+id/prf_img"
+                app:layout_constraintTop_toTopOf="@+id/prf_img" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/prf_img"
+                android:layout_width="@dimen/_53mdp"
+                android:layout_height="@dimen/_53mdp"
+                android:layout_marginStart="@dimen/_10mdp"
+                android:layout_marginTop="@dimen/_12mdp"
+                android:src="@drawable/profile"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="@dimen/_1mdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/appbar" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12mdp"
+                android:text="My moments"
+                android:textColor="#000000"
+                android:textSize="@dimen/_20font_mdp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/prf_img"
+                app:layout_constraintStart_toEndOf="@+id/prf_img"
+                app:layout_constraintTop_toTopOf="@+id/prf_img"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6mdp"
+                android:text="Tap to make moments"
+                android:textColor="#000000"
+                android:textSize="@dimen/_11font_mdp"
+
+                app:layout_constraintStart_toStartOf="@+id/textView3"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                android:hint="What's in your mind?"
+                android:maxLines="5"
+                android:padding="@dimen/_5mdp"
+                android:textSize="@dimen/_14font_mdp"
+                app:layout_constraintTop_toBottomOf="@+id/prf_img"
+
+
+                />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/post_img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200mdp"
+                android:padding="@dimen/_8mdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                app:riv_border_color="#333333"
+                app:riv_border_width="2dip"
+                app:riv_corner_radius="20dip"
+                app:riv_mutate_background="true" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1mdp"
+        android:layout_margin="@dimen/_5mdp"
+
+        android:background="#A5A4A4"
+        app:layout_constraintBottom_toTopOf="@id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg"
+        android:backgroundTint="#A5A4A4"
+        app:layout_constraintBottom_toBottomOf="@id/text"
+        app:layout_constraintEnd_toEndOf="@id/text"
+        app:layout_constraintStart_toStartOf="@id/text"
+        app:layout_constraintTop_toTopOf="@id/text" />
+
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5mdp"
+        android:background="@android:color/transparent"
+        android:maxHeight="@dimen/_200mdp"
+        android:hint="Enter Text"
+        android:inputType="textMultiLine"
+        android:padding="@dimen/_8mdp"
+        android:textColorHint="@color/black"
+        android:textSize="@dimen/_15font_mdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        android:importantForAutofill="no" />
+
+    <ImageButton
+        android:layout_margin="@dimen/_5mdp"
+        android:padding="@dimen/_7mdp"
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/circle_bg"
+        app:srcCompat="@drawable/ic_baseline_image_search_24"
+        android:contentDescription="Image Select for post" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
