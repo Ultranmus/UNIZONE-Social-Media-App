@@ -1,10 +1,10 @@
 # Unizone Social Media App Documentation
 
-![Logo](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/unizone%20logo.jpg?alt=media&token=f5f7c5df-ab9b-4916-bdab-1f650f6b6a92)
+![Logo](readme-assets/unizone-logo.jpg)
 
 ## Working
 Our feature-rich social media platform developed using Android Java and XML offers users a comprehensive and engaging experience. Users can connect and stay updated with others through the follow/follow back functionality, share posts with text, images, and videos, and engage in real-time chat conversations. The platform also includes the moments feature for sharing temporary content, liking posts, commenting, and replying. The integration of Firestore ensures instant updates without manual refresh. With a user-friendly interface and enhanced chat browsing capabilities, users can search for specific messages and difficult terms within the inbuilt browser. Overall, our platform provides seamless connectivity, content sharing, and interactive communication for an enjoyable social media experience.
-- To better understand the features and how it works with image explanation, [please view this documentation](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/Unizone%20introduction.pdf?alt=media&token=cc8f6195-ed9c-4d38-b1ea-97a82847c8f5).
+- To better understand the features and how it works with image explanation, [please view this documentation](readme-assets/unizone-introduction.pdf).
 ### Functionalities Implemented
 
 #### Follow/Follow Back
@@ -109,37 +109,37 @@ In the left figure, after clicking the plus button from the previous screen, use
 
 ### Screenshots
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/1.jpg?alt=media&token=2dbfbae0-6f7a-4f51-bd8c-6cb1e1edca51)
+![](readme-assets/1.jpg)
 
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/2.jpg?alt=media&token=dc7ba3f3-6589-4e3a-9af9-234ebe865f28)
+![](readme-assets/2.jpg)
 
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/3.jpg?alt=media&token=599b1dd0-a762-46f0-b28f-2cbb673af7be)
+![](readme-assets/3.jpg)
 
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/4.jpg?alt=media&token=2a286a81-97bd-4785-9bd2-66ea22b8e616)
+![](readme-assets/4.jpg)
 
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/5.jpg?alt=media&token=4ad5e884-b8ea-444f-84c5-4e3fd39a4d23)
+![](readme-assets/5.jpg)
 
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/6.jpg?alt=media&token=8a05b6d9-8937-45b1-afb6-2c56d6d17a83)
+![](readme-assets/6.jpg)
 
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/7.jpg?alt=media&token=50ffc847-9a9a-4a83-b209-9abdea18198d)
+![](readme-assets/7.jpg)
 
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/8.jpg?alt=media&token=e2445d5d-a488-4c10-be85-d7c970748658)
+![](readme-assets/8.jpg)
 
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/9.jpg?alt=media&token=e5d96db5-3b68-46e1-9607-044316608721)
+![](readme-assets/9.jpg)
 
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/10.jpg?alt=media&token=b8ca2eea-b2ff-4488-8750-e19b09e42cad)
+![](readme-assets/10.jpg)
 
 
-![](https://firebasestorage.googleapis.com/v0/b/github-895c7.appspot.com/o/11.jpg?alt=media&token=409d85d5-ddc4-45cf-be27-5ee422c1a5fb)
+![](readme-assets/11.jpg)
 
 
 ### Contact
